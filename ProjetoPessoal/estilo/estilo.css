@@ -1,0 +1,1117 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: rgb(32, 32, 32);
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+.cabecalho {
+    width: 100%;
+    background-color: #1d1c1c;
+    border-bottom: 6px solid #eb1b1b;
+    z-index: 1;
+}
+
+/* MENU HAMBURGUER*/
+.checkbtn{
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none; 
+}
+
+#check{
+    display: none;
+}
+
+/* MENU*/
+.logo{
+    width: 22%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.cabecalho ul {
+    float: right;
+    margin-top: 72px;
+    margin-right: 12%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.cabecalho li a:hover{
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+} 
+
+.cabecalho li a::after{
+    content: "";
+    width: 0;
+    display: block;
+    height: 2px;
+    background:transparent;
+    transition: width 0.5s ease, background-color 0.5s ease ;
+} 
+
+.cabecalho li a:hover::after{
+    width: 100%;
+    background: rgb(245, 11, 11);
+    color: #fff;
+}
+
+.cabecalho li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.cabecalho li a {
+    color: #fff;
+    margin-right: 40px;
+    font-size: 1.1em;
+}
+
+/* CARROSSEL  */
+.btnguitar a{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.1em;
+    text-decoration: none;
+
+}
+
+ .btnguitar{
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 25%;
+    display: block;
+    background-color: #eb1b1b;
+    border:3px solid #eb1b1b;
+    padding: 10px 10px;
+    border-radius: 7px ;
+    transition: .7s;
+} 
+ 
+.btnguitar:hover{
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 25%;
+    display: block;
+    background-color: transparent;
+    border:3px solid #eb1b1b;
+    padding: 10px 17px;
+    border-radius: 7px ;
+    transition: .7s;
+} 
+
+h5{
+    color: #eb1b1b;
+    font-weight: bolder;
+    font-size: 4.0em;
+    font-family:fantasy;
+    text-align:center;
+    margin-bottom: 2%;
+}
+
+/* BANNERS - ROCK E BLUES */
+.banner__line{
+    line-height: 4rem;
+}
+
+.banner__container{
+    grid-template-columns: repeat(2, 1fr) ;
+    display: grid;
+    gap: 2rem 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.banner__card{
+    background-color: #d1cfcf;
+    padding: .75rem;
+    border-radius: .5rem;
+}
+
+.fa-headphones-alt{
+    font-size: 7.0em;
+    color: #bd1313;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.fa-music{
+    font-size: 7.0em;
+    color: #bd1313;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.banner__content a:hover{
+    color: transparent;
+} 
+
+.banner__content h2 {
+    margin-bottom: 1rem;
+    text-transform:uppercase ;
+    color: #000;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.banner__content p {
+    color: #111;
+    text-align: justify;
+    font-size: 1.2em;
+    padding: 0 2rem 0 2rem;
+}
+
+.banner__content button {
+    background-color: #eb1b1b;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: max-content;
+    display: block;
+    transition: .8s;
+    border:3px solid #eb1b1b;
+    cursor: pointer;
+}
+
+.banner__content button:hover{   
+    text-decoration: none;
+    font-weight: bolder;
+    color: #FFF;
+    margin: auto;
+    max-width: max-content;
+    display: block;
+    background-color: #9c1111;
+    border:3px solid #9c1111;
+    padding: 10px 15px;
+    border-radius: 7px ;
+    transition: .7s;
+}
+
+.banner__content button a{
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bolder;
+}
+
+.banner__content button a:hover{
+    color: #fff;
+}
+
+/* RODAPE */
+.rodape {
+    width: 100%;
+    float: left;
+    background-color: #1d1c1c;;
+    padding: 25px 8%;
+    display: flex;
+}
+
+.rodape p {
+    color: #ccc;
+}
+
+/* SOCIAL - ICONS */
+.social-icons {
+    float: right;
+    margin-left: auto;
+}
+
+.social-icons a {
+    color: #ccc;
+    float: right;
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+
+.social-icons .fa-facebook:hover {
+    color: #eb1b1b;
+}
+
+.social-icons .fa-instagram:hover {
+
+    color: #eb1b1b;
+}
+
+.social-icons .fa-youtube:hover {
+    color: #eb1b1b;
+}
+
+.social-icons .fa-linkedin:hover {
+    color: #eb1b1b;
+}
+
+/* PAGINA ROCK/BLUES */
+.principal {
+    width: 100%;
+    float: left;
+    padding: 16px 8%;
+}
+
+.rock {
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+
+.rock h2 {
+    margin-bottom: 24px;
+    margin-top: 21px;
+    color: #eb1b1b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.0em;
+    text-align: center;
+}
+
+
+.rock img {
+    width: 50%;
+    float: left;
+    border-radius: 7px;
+    margin: 0px 15px 54px 0px;
+}
+
+#imgd {
+    width: 50%;
+    float: right;
+    border-radius: 7px;
+    margin: 10px 0 5px 15px;
+}
+
+.rock p {
+    text-align: justify;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.historia p{
+    margin: 30px 100px 0 100px;
+}
+
+/* PRINCIPAIS NOMES */
+.rock1 iframe{
+    float: left;
+    width:500px;
+    height:300px;
+    margin: 0px 20px 0 0px;
+}
+
+.rock1 h2 {
+    margin-bottom: 24px;
+    margin-top: 21px;
+    color: #eb1b1b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.0em;
+    text-align: center;
+}
+
+.rock1 a{
+   font-size: 1.3em;
+   margin: auto;
+   display: block;
+   max-width: max-content;
+   color: #111;
+   padding: -15px;
+}
+
+.rock1 p{
+    font-size: 1.2em;
+  text-align: justify;
+    color: #111;
+ }
+
+.fa-spotify{
+   color: #1db954;
+   font-size: 2.5em;
+   margin: auto;
+   display: block;
+   max-width: max-content;
+}
+
+.fa-spotify:hover{
+    color: #1db954;
+    font-size: 2.9em;
+    padding-top: 20px;
+    margin: auto;
+    display: block;
+    max-width: max-content;
+    transition: .8s;
+}
+
+/* RESPONSIVIDADE - ATÉ 550PX */
+@media screen and (max-width: 550px) { 
+/* CARROSSEL  */
+.cabecalho {
+    width: 100%;
+    background-color: #1d1c1c;
+    border-bottom: 6px solid #eb1b1b;
+    position: fixed;
+    top: 0;
+}
+
+#carouselExampleIndicators{
+    margin-top: 22%;
+    z-index: -1;
+ }
+
+.btnguitar a{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.1em;
+    text-decoration: none;
+
+}
+
+ .btnguitar{
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 25%;
+    display: block;
+    background-color: #eb1b1b;
+    border:3px solid #eb1b1b;
+    padding: 10px 10px;
+    border-radius: 7px ;
+    transition: .7s; 
+} 
+
+h5{
+    color: #eb1b1b;
+    font-weight: bolder;
+    font-size: 4.0em;
+    font-family:fantasy;
+    text-align:center;
+    margin-bottom: 2%;
+}
+
+ /* MENU HAMBUERGUER */
+.cabecalho {
+    width: 100%;
+    background-color: #1d1c1c;
+    border-bottom: 6px solid #eb1b1b;
+    position: fixed;
+   
+}
+
+.logo{
+    width: 40%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.cabecalho ul {
+    text-transform: uppercase;
+    font-size: 1.0em;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 8px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 1;
+    background: #1d1c1c;;
+}
+
+.cabecalho ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+}
+
+.checkbtn{
+    display: block;
+    margin-top: 4%;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+/* BANNERS ROCK E BLUES  */
+.banner__line{
+    line-height: 4rem;
+}
+
+.banner__container{
+    grid-template-columns: repeat(2, 1fr) ;
+    display: grid;
+    gap: 2rem 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.banner__card{
+    background-color: #d1cfcf;
+    padding: .75rem;
+    border-radius: .5rem;
+  
+}
+.fa-headphones-alt{
+    font-size: 7.0em;
+    color: #bd1313;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+.fa-music{
+    font-size: 7.0em;
+    color: #bd1313;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.banner__content a:hover{
+    color: transparent;
+} 
+
+.banner__content h2 {
+    margin-bottom: 1rem;
+    text-transform:uppercase ;
+    color: #000;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.banner__content p {
+    color: #111;
+    text-align: justify;
+    font-size: 1.0em;
+    padding: 0 2px 0 2px;
+}
+
+.banner__content button {
+    background-color: #eb1b1b;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: max-content;
+    display: block;
+    transition: .8s;
+    border:3px solid #eb1b1b;
+    cursor: pointer;
+    
+}
+.banner__content button:hover{   
+    text-decoration: none;
+    font-weight: bolder;
+    color: #FFF;
+    margin: auto;
+    max-width: max-content;
+    display: block;
+    background-color: #9c1111;
+    border:3px solid #9c1111;
+    padding: 5px 10px;
+    border-radius: 7px ;
+    transition: .7s;
+    
+}
+.banner__content button a{
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bolder;
+}
+.banner__content button a:hover{
+    color: #fff;
+}
+
+
+/* RODAPE */
+.rodape {
+    width: 100%;
+    float: left;
+    background-color: #1d1c1c;;
+    padding: 25px 8%;
+    display: flex;
+}
+
+.rodape p {
+    color: #ccc;
+    font-size: 0.6em;
+    text-align: center;
+    padding-left: 30px;
+}
+
+/* SOCIAL - ICONS rodape */
+.rodape p{
+    font-size: 0.8em;
+}
+
+.social-icons {
+    padding: 2px 2px 0 170px;
+    float: left;
+    display: inline-flex;
+    max-width: max-content;
+    margin: auto;
+}
+
+.social-icons a {
+    color: #ccc;
+    font-size: 1.1em;
+}
+
+.social-icons .fa-facebook:hover {
+    color: #eb1b1b;
+}
+
+.social-icons .fa-instagram:hover {
+    color: #eb1b1b;
+}
+
+.social-icons .fa-youtube:hover {
+    color: #eb1b1b;
+}
+
+.social-icons .fa-linkedin:hover {
+    color: #eb1b1b;
+}
+
+/* PAGINA ROCK/BLUES */
+.principal {
+    width: 100%;
+    float: left;
+    padding: 16px 8%;
+}
+
+.rock {
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.rock h2 {
+    margin-bottom: 24px;
+    margin-top: 140px;
+    color: #eb1b1b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.rock img {
+    width: 100%;
+    float: left;
+    border-radius: 7px;
+    margin: 0px 15px 30px 10px;
+}
+
+#imgd {
+    width: 100%;
+    float: right;
+    border-radius: 7px;
+    margin: 15px -10px 30px 15px;
+}
+
+.rock p {
+    text-align: justify;
+    font-size: 1.0em;
+    margin: 10px 0px 0 10px;
+}
+
+.historia h2{
+    margin-top: -50px;
+}
+
+.historia p{
+    margin: 10px 10px 0 30px;
+}
+
+/* PRINCIPAIS NOMES */
+.rock1 iframe{
+    float: left;
+    width:410px;
+    height:280px;
+    margin: 20px 20px 0 0px;
+}
+
+.rock1 h2{
+    margin-bottom: 0px;
+    margin-top: 150px;
+    color: #eb1b1b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+ }
+
+.rock1 p{
+  text-align: justify;
+  font-size: 1.0em;
+}
+
+.rock1 a{
+   font-size: 1.0em;
+   margin: auto;
+   display: block;
+   max-width: max-content;
+   color: #111;
+}
+
+.fa-spotify{
+   color: #1db954;
+   font-size: 2.0em;
+   margin: auto;
+   display: block;
+   max-width: max-content;
+}
+
+.fa-spotify:hover{
+    color: #1db954;
+    font-size: 2.5em;
+    margin: auto;
+    display: block;
+    max-width: max-content;
+    transition: .8s;
+ }
+}
+
+@media (min-width: 550px) and (max-width: 846px) {
+/* CARROSSEL  */
+#carouselExampleIndicators{
+     margin-top: 22%;
+     z-index: -1;
+}
+
+.btnguitar a{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.1em;
+    text-decoration: none;
+
+}
+
+ .btnguitar{
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 25%;
+    display: block;
+    background-color: #eb1b1b;
+    border:3px solid #eb1b1b;
+    padding: 10px 10px;
+    border-radius: 7px ;
+    transition: .7s;   
+} 
+ 
+h5{
+    color: #eb1b1b;
+    font-weight: bolder;
+    font-size: 4.0em;
+    font-family:fantasy;
+    text-align:center;
+    margin-bottom: 2%;
+}
+
+/* MENU HAMBUERGUER */
+.cabecalho {
+    width: 100%;
+    background-color: #1d1c1c;
+    border-bottom: 6px solid #eb1b1b;
+    position: fixed;
+    top: 0; 
+}
+
+.logo{
+    width: 40%;
+     margin-left: 5%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.cabecalho ul {
+    text-transform: uppercase;
+    font-size: 1.0em;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 1;
+    background: #1d1c1c;
+}
+
+.cabecalho ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+}
+
+.checkbtn{
+    display: block;
+    margin-top: 4%;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+.cabecalho li a:hover{
+    background-color: transparent;
+    color: #fff;
+} 
+    
+.cabecalho li a::after{
+    content: "";
+    width: 0;
+    display: block;
+    height: 2px;
+    background:transparent;
+    transition: width 0.5s ease, background-color 0.5s ease ;
+} 
+    
+.cabecalho li a:hover::after{
+    width: 96%;
+    background: rgb(245, 11, 11);
+    color: #fff;
+}
+
+.cabecalho li {
+    display: inline-block;
+    margin-left: 0px;
+}
+    
+.cabecalho li a {
+    color: #fff;
+    margin-right: 40px;
+    font-size: 1.1em;
+}
+
+/* BANNERS ROCK E BLUES  */
+.banner__line{
+    line-height: 4rem;
+}
+    
+.banner__container{
+    grid-template-columns: repeat(2, 1fr) ;
+    display: grid;
+    gap: 2rem 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+    
+.banner__card{
+    background-color: #d1cfcf;
+    padding: .75rem;
+    border-radius: .5rem; 
+}
+
+.fa-headphones-alt{
+    font-size: 7.0em;
+    color: #bd1313;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+    
+.fa-music{
+    font-size: 7.0em;
+    color: #bd1313;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+    
+.banner__content a:hover{
+     color: transparent;
+} 
+    
+.banner__content h2 {
+    margin-bottom: 1rem;
+    text-transform:uppercase ;
+    color: #000;
+    text-align: center;
+    font-size: 1.8em;
+}
+    
+.banner__content p {
+    color: #111;
+    text-align: justify;
+    font-size: 1.2em;
+    padding: 0 2rem 0 2rem;
+}
+
+.banner__content button {
+    background-color: #eb1b1b;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: max-content;
+    display: block;
+    transition: .8s;
+    border:3px solid #eb1b1b;
+    cursor: pointer;      
+}
+
+.banner__content button:hover{   
+    text-decoration: none;
+    font-weight: bolder;
+    color: #FFF;
+    margin: auto;
+    max-width: max-content;
+    display: block;
+    background-color: #9c1111;
+    border:3px solid #9c1111;
+    padding: 10px 15px;
+    border-radius: 7px ;
+    transition: .7s;   
+}
+
+.banner__content button a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.banner__content button a:hover{
+    color: #fff;
+}
+
+/* PAGINA ROCK E BLUES HISTORIA */
+.rock h2 {
+    margin-bottom: 24px;
+    margin-top: 190px;
+    color: #eb1b1b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.rock img {
+    width: 100%;
+    float: left;
+    border-radius: 7px;
+    margin: 0px 15px 30px 10px;
+}
+
+#imgd {
+    width: 100%;
+    float: right;
+    border-radius: 7px;
+    margin: 15px -10px 30px 15px;
+}
+
+.rock p {
+    text-align: justify;
+    font-size: 1.2em;
+    margin: 10px 0px 0 10px;
+}
+
+.historia h2{
+    margin-top: -50px;
+}
+.historia p{
+    margin: 10px 10px 0 30px;
+}
+
+.rock1 iframe{
+    
+    width:100%;
+    height:380px;
+    margin: 20px 20px 20px 0px;
+}
+
+.rock1 h2{
+    margin-bottom: 0px;
+    margin-top: 190px;
+    color: #eb1b1b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.rock1 p{
+    text-align: justify;
+    font-size: 1.3em;
+ }
+}
+
+
+@media (min-width: 847px) and (max-width: 1200px) {
+/* MENU HAMBURGUER */
+.cabecalho {
+    width: 100%;
+    background-color: #1d1c1c;
+    border-bottom: 6px solid #eb1b1b;
+    }
+
+.logo{
+    width: 25%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.cabecalho ul {
+    float: right;
+    margin-top: 7%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* BANNER ROCK E BLUES */
+.banner__line{
+    line-height: 4rem;
+}
+
+.banner__container{
+    grid-template-columns: repeat(2, 1fr) ;
+    display: grid;
+    gap: 2rem 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.banner__card{
+    background-color: #d1cfcf;
+    padding: .75rem;
+    border-radius: .5rem;
+  
+}
+.fa-headphones-alt{
+    font-size: 7.0em;
+    color: #bd1313;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+.fa-music{
+    font-size: 7.0em;
+    color: #bd1313;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.banner__content a:hover{
+    color: transparent;
+} 
+
+.banner__content h2 {
+    margin-bottom: 1rem;
+    text-transform:uppercase ;
+    color: #000;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.banner__content p {
+    color: #111;
+    text-align: justify;
+    font-size: 1.2em;
+    padding: 0 2rem 0 2rem;
+}
+
+.banner__content button {
+    background-color: #eb1b1b;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: max-content;
+    display: block;
+    transition: .8s;
+    border:3px solid #eb1b1b;
+    cursor: pointer;
+    
+}
+.banner__content button:hover{   
+    text-decoration: none;
+    font-weight: bolder;
+    color: #FFF;
+    margin: auto;
+    max-width: max-content;
+    display: block;
+    background-color: #9c1111;
+    border:3px solid #9c1111;
+    padding: 10px 15px;
+    border-radius: 7px ;
+    transition: .7s;
+    
+}
+.banner__content button a{
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bolder;
+}
+.banner__content button a:hover{
+    color: #fff;
+}
+
+ #guitarrista h5{
+    position: relative;
+    bottom: 330px;
+    color: #eb1b1b;
+    font-weight: bolder;
+    font-size: 3.0em;
+    font-family:fantasy;
+    text-align:center;
+    
+}
+}
+
+
+
+
+
